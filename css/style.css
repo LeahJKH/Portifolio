@@ -113,6 +113,36 @@ box-shadow: 0 12 100 3 rgba(0,0,0,0.72);
 
 
 /*SECOND SECTION*/
+#Second-sect {
+background-color: #716A72;
+width: 100%;
+height: fit-content;
+padding: 60px;
+}
+#project-card {
+    width: 80%;
+    height: fit-content;
+    background-color: #303030;
+    justify-content: center;
+    align-items: center;
+}
+#project-cont {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 5%;
+    width: 100%;
+    justify-content: center;
+}
+.txtLessCards {
+width: 100%;
+height: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+#picproj {
+    width: 40%;
+}
 /*SECOND SECTION*/
 .row {
     display: flex;
