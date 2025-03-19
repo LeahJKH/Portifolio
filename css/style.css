@@ -109,6 +109,9 @@ box-shadow: 0 12 100 3 rgba(0,0,0,0.72);
 }
 #parralax-bottom {
     height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .parralax {
     width: 100%;
@@ -119,6 +122,14 @@ box-shadow: 0 12 100 3 rgba(0,0,0,0.72);
     background-color: #2a2a2a;
     background-attachment: fixed;
     z-index: 2000;
+}
+#text-box {
+    width: 70%;
+    height: fit-content;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 2vmax;
+    padding: 20px;
 }
 /*PARRALAX*/
 
@@ -170,7 +181,9 @@ align-items: center;
 }
 /*SECOND SECTION*/
 
+/*THIRD SECTION*/
 
+/*THIRD SECTION*/
 
 
 .row {
