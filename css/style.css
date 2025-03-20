@@ -140,6 +140,9 @@ background-color: transparent;
 width: 100%;
 height: fit-content;
 padding: 60px;
+display: flex;
+justify-content: space-between;
+align-items: center;
 }
 #project-card {
     width: 80%;
@@ -147,6 +150,25 @@ padding: 60px;
     background-color: #2a2a2a;
     justify-content: center;
     align-items: center;
+}
+#language-cont {
+background-color: #2a2a2a;
+width: 18%;
+justify-content: space-between;
+min-height: 80%;
+gap: 15px;
+color: white;
+padding: 20px;
+}
+.icon-image {
+    height: 50px;
+}
+.lang-hold-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6.25px;
 }
 #project-cont {
     display: grid;
