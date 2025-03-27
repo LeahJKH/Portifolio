@@ -149,8 +149,8 @@ align-items: center;
     width: 80%;
     height: fit-content;
     background-color: #2a2a2a;
-    justify-content: center;
-    align-items: center;
+    box-shadow: 0px 0px 12px 1px black;
+    padding: 10px 5px;
 }
 #language-cont {
 background-color: #2a2a2a;
@@ -160,6 +160,7 @@ min-height: 80%;
 gap: 15px;
 color: white;
 padding: 20px;
+box-shadow: 0px 0px 12px 1px black;
 }
 .icon-image {
     height: 50px;
@@ -170,24 +171,13 @@ padding: 20px;
     justify-content: flex-start;
     align-items: center;
     gap: 6.25px;
-}¨
-#card-bot-links {
-    width: 80%;
 }
 #project-cont {
     display: grid;
     grid-template-columns: repeat(2, 400px);
     grid-template-rows: repeat(2, 300px);
-    justify-items: center;
-    align-items: center;
     overflow: hidden;
-}
-.txtLessCards {
-width: 100%;
-height: auto;
-display: flex;
-justify-content: center;
-align-items: center;
+    gap: 2%;
 }
 .picproj {
    max-width: 100%;
@@ -210,6 +200,30 @@ align-items: center;
     width: 80%;
     height: 90%;
     margin: 53px auto;
+    justify-content: space-between;
+    padding: 5px 25px 5px 2px;
+}
+#links-cont {
+    width: 60%;
+    padding: 12px 9px;
+    gap: 7px;
+}
+#links-cont > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    gap: 10px;
+}
+#links-cont > div > img {
+  width: 50px;
+  height: 50px;
+}
+#bottom-img {
+    height: 180px;
+    width: 270px;
+    margin-top: 4px;
+    
 }
 /*THIRD SECTION*/
 
@@ -221,4 +235,8 @@ align-items: center;
 .column {
     display: flex;
     flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
 }
