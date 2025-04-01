@@ -248,6 +248,11 @@ box-shadow: 0px 0px 12px 1px black;
 }
 /*THIRD SECTION*/
 
+/*FOOTER*/
+#github-logo {
+    width: 50px;
+}
+/*FOOTER*/
 
 .row {
     display: flex;
