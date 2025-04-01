@@ -1,0 +1,47 @@
+[
+    {
+        "img": "./images/icons/c-plus-plus_svgrepo.com.svg",
+        "alt": "C++ programming language logo",
+        "txt": "C++"
+    },
+    {
+        "img": "./images/icons/csharp_svgrepo.com.svg",
+        "alt": "C# programming language logo",
+        "txt": "C#"
+    },
+    {
+        "img": "./images/icons/css-3_svgrepo.com.svg",
+        "alt": "CSS3 logo",
+        "txt": "CSS"
+    },
+    {
+        "img": "./images/icons/html-5_svgrepo.com.svg",
+        "alt": "HTML5 logo",
+        "txt": "HTML"
+    },
+    {
+        "img": "./images/icons/javascript_svgrepo.com.svg",
+        "alt": "JavaScript programming language logo",
+        "txt": "JavaScript"
+    },
+    {
+        "img": "./images/icons/node_svgrepo.com.svg",
+        "alt": "Node.js runtime environment logo",
+        "txt": "Node.js"
+    },
+    {
+        "img": "./images/icons/python_svgrepo.com.svg",
+        "alt": "Python programming language logo",
+        "txt": "Python"
+    },
+    {
+        "img": "./images/icons/react_svgrepo.com.svg",
+        "alt": "React JavaScript library logo",
+        "txt": "React"
+    },
+    {
+        "img": "./images/icons/typescript-official_svgrepo.com.svg",
+        "alt": "TypeScript programming language logo",
+        "txt": "TypeScript"
+    }
+]
