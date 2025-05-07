@@ -28,6 +28,8 @@ header {
     text-align: left;
     padding: 15px 25px;
     display: inline-block;
+    position: sticky;
+    top: 0;
 }
 footer {
     background: linear-gradient(0deg, #65456B 0%, #C687D1 100%);
