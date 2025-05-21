@@ -1,259 +1,73 @@
-@font-face {
-    font-family: "Jura";
-    src: url(../fonts/Jura/Jura-VariableFont_wght.ttf);
+:root {
+    --text-color: #D7DCEB;
+    --main-blue: #404757;
+    --accent-blue: #282b33;
+    --main-grey: #343434;
+    --accent-grey: #9A9A9A;
+    /* TODO: find more suitable colors */
 }
 
-@font-face {
-    font-family: "Fira Code";
-    src: url(../fonts/Fira_Code/FiraCode-VariableFont_wght.ttf);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    order: ;
-}
 
 body {
-    font-family: "Jura", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    overflow-x: hidden;
-    background-color:rgb(65,64,64);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* TODO: find better font */
+    background-color: var(--main-blue);
+    background: radial-gradient(circle, var(--main-blue) 0%, var(--accent-blue) 100%);
 }
+/* HEADER */
 
 header {
-    background-color: #865D8D;
-    background: linear-gradient(90deg, #AA7EB2 0%, #865D8D 35%, #AA7EB2 100%  );
-    width: 100%;
-    height: 23%;
-    text-align: left;
-    padding: 15px 25px;
-    display: inline-block;
-}
-footer {
-    background: linear-gradient(0deg, #65456B 0%, #C687D1 100%);
-    width: 100%;
-    height: 200px;
-}
-
-#Full-page-color {
-    background: rgb(65,64,64);
-    background: linear-gradient(0deg, rgba(65,64,64,1) 0%, rgba(26,25,25,1) 100%);
-}
-
-/*FIRST SECTION*/
-#main-txt-header {
-    font-family: "Fira Code", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    
-    color: white;
-    letter-spacing: 2px;
-   
-}
-#cont-in {
-    display: inline-block;
-}
-#type-eff {
-    font-size: 40px;
-    border-right: .15em solid rgb(14, 13, 13);
-    overflow: hidden;
-    white-space: nowrap;
-    animation: typedText 1.5s steps(16, end) forwards, blinkingCursor .8s infinite;
-    width: 0;
-}
-#introduction {
-    background-color: transparent;
-    width: 100%;
-    height: fit-content;
-    padding: 53px 47px;
-}
-#intro-contain {
-    width: 73%;
-    min-height: 340px;
-    height: fit-content;
-    background-color: #2a2a2a;
-    color: white;
-    padding: 2vmax 3vmax;
-    margin-bottom: 25px;
-}
-#intro-contain > p {
-    margin-top: 5px;
-     font-size: 100%;
-}
-#intro-contain > h2 {
-     font-size: 180%;
-     text-decoration: underline;
-}
-
-#main-img {
-    width: 25%;
-    min-height: 330px;
-    max-height: 340px;
-    height: 100%;
-}
-#img-full {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    max-width: 200px;
-    min-width: 190px;
-    min-height: 330px;
-    max-height: 340px;
-}
-#top-cont-intro {
-    justify-content: space-between;
-    align-items: stretch;
-    height: fit-content;
-}
-#card-proj-cont {
 justify-content: space-between;
 align-items: center;
+background-color: var(--main-grey);
+position: fixed;
+width: 100vw;
+}
+nav {
+gap: 7px;
+margin: 7px 25px;
 }
 
-.cardCont {
-border-radius: 20px 20px 0 0;
-width: 23%;
-height: 359px;
+#top-txt {
+margin: 0;
+margin: 7px 15px;
 }
-.cardImgProj {
-width: 100%;
-height: 221px;
-}
-.cardTextCont {
-background-color: #2a2a2a;
-width: 100%;
-height: 138px;
-box-shadow: 0 12 100 3 rgba(0,0,0,0.72);
-}
-/*FIRST SECTION*/
 
-/*PARRALAX*/
-#parralax-top {
-    height: 200px;
+.top-links {
+text-decoration: none;
+color: var(--text-color);
 }
-#parralax-bottom {
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.parralax {
-    width: 100%;
-    height: 200px;
-    background-image: url(../images/code/parlax.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #2a2a2a;
-    background-attachment: fixed;
-    z-index: 2000;
-}
-#text-box {
-    width: 70%;
-    height: fit-content;
-    background-color: #2a2a2a;
-    color: white;
-    font-size: 2vmax;
-    padding: 20px;
-}
-/*PARRALAX*/
+.top-links:hover {
 
+}
+.top-links:active {
 
-/*SECOND SECTION*/
-#Second-sect {
-background-color: transparent;
-width: 100%;
-height: fit-content;
-padding: 60px;
-display: flex;
-justify-content: space-between;
+}
+
+/* HEADER */
+
+/*HERO SECTION*/
+#hero-sect {
+justify-content: center;
 align-items: center;
-}
-#project-card {
-    width: 80%;
-    height: fit-content;
-    background-color: #2a2a2a;
-    box-shadow: 0px 0px 12px 1px black;
-    padding: 10px 5px;
-}
-#language-cont {
-background-color: #2a2a2a;
-width: 18%;
-justify-content: space-between;
-min-height: 80%;
-gap: 15px;
-color: white;
-padding: 20px;
-box-shadow: 0px 0px 12px 1px black;
-}
-.icon-image {
-    height: 50px;
-}
-.lang-hold-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 6.25px;
-}
-#project-cont {
-    display: grid;
-    grid-template-columns: repeat(2, 400px);
-    grid-template-rows: repeat(2, 300px);
-    overflow: hidden;
-    gap: 2%;
-}
-.picproj {
-   max-width: 100%;
-   max-height: 100%;
-}
-#page-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #0e0e0e;
-    width: 200px;
-    border: 2px inset rgb(104, 103, 103);
-    color: white;
-}
-/*SECOND SECTION*/
+gap: 35px;
 
-/*THIRD SECTION*/
-#card-bot-links {
-    background-color: #2a2a2a; 
-    width: 80%;
-    height: 90%;
-    margin: 53px auto;
-    justify-content: space-between;
-    padding: 5px 25px 5px 2px;
 }
-#links-cont {
-    width: 60%;
-    padding: 12px 9px;
-    gap: 7px;
-}
-#links-cont > div {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    gap: 10px;
-}
-#links-cont > div > img {
-  width: 50px;
-  height: 50px;
-}
-#bottom-img {
-    height: 180px;
-    width: 270px;
-    margin-top: 4px;
-    
-}
-/*THIRD SECTION*/
+#titles {
 
-/*FOOTER*/
-#github-logo {
-    width: 50px;
 }
-/*FOOTER*/
+#pic-self {
+ border-radius: 200px; 
+ width: 200px;
+ height: 200px;  
+}
+/*HERO SECTION*/
+
+/* COMMON CLASSES */
 
 .row {
     display: flex;
@@ -263,17 +77,6 @@ box-shadow: 0px 0px 12px 1px black;
     display: flex;
     flex-direction: column;
 }
-.center {
-    justify-content: center;
-    align-items: center;
+.section-size {
+    height: 100vh;
 }
-
-
-@keyframes typedText {
-    from {width: 0%;}
-    to {width: 100%;}
-}
-@keyframes blinkingCursor {
-    from { border-color: transparent }
-    to { border-color: rgb(14, 13, 13); }
-  }

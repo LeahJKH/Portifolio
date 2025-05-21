@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,97 +8,28 @@
     <script src="./js/app.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1 id="main-txt-header"><div id="cont-in"><div id="type-eff">&lt;Leah_Yoimiya_Johansen/&gt;</div></div></h1>
-    </header>
+   <header class="row">
+    <h1 id="top-txt">Leah Yoimiya's portfolio</h1>
+    <nav class="row">
+        <p><a href="#hero-sect" class="top-links">Hjem</a></p>
+        <p><a href="#skills-sect" class="top-links">Ferdigheter</a></p>
+        <p><a href="#projects-sect" class="top-links">Prosjekter</a></p>
+    </nav>
+   </header>
+   <main>
+    <section class="section-size column" id="hero-sect">
+        <h2 id="titles">Fullstacker, Mentor & Veileder</h2>
+        <img src="./images/me/image.jpg" alt="a picture of me smiling towards the camera with pink hair" id="pic-self">
+        <!--TODO: change image-->
+    </section>
 
-    <main>
-        <div id="Full-page-color">
+    <section class="section-size" id="skills-sect">
 
-            <section id="introduction">
-                <div class="row" id="top-cont-intro">
-                    <div id="main-img">
-                        <img src="./images/me/image.jpg" alt="a picture of me smiling with pink hair" id="img-full" >
-                    </div>
-                    <div id="intro-contain">
-                    <h2>Hei! Jeg er Leah Yoimiya Johansen</h2>
-                    <p>Jeg har en bakgrunn som barne- og ungdomsarbeider, men har senere skiftet fokus til programmering. For øyeblikket er jeg i praksis hos Jobloop, hvor jeg jobber med fullstack utvikling. Jeg har opparbeidet meg ferdigheter i flere programmeringsspråk og ulike rammeverk, som gjør meg i stand til å utvikle både frontend og backend applikasjoner. I min nåværende rolle har jeg arbeidet med ulike prosjekter som har gitt meg verdifull erfaring i å samarbeide med andre utviklere, forstå kravene fra brukere og levere kvalitetsløsninger innen tidsfrister. Jeg er motivert for å fortsette min karriere innen programvareutvikling og ser frem til nye utfordringer hvor jeg kan bidra med min kunnskap og lære enda mer.</p>
-                </div>
-            </div>
-            <div id="card-proj-cont" class="row">
-                
-            </div>
-        </section>
-        
-        <section id="parralax-top" class="parralax">
-            
-        </section>
-        
-        <section class="row" id="Second-sect">
-            <div class="column" id="language-cont">
-                
-            </div>
-            
-            <div class="column center" id="project-card">
-                <div id="project-cont" class="center">
-                    <img src="./images/projects/temp.webp" alt="" class="picproj">
-                    
-                    
-                    <img src="./images/projects/temp.webp" alt="" class="picproj">
-                    
-                    
-                    <img src="./images/projects/temp.webp" alt="" class="picproj">
-                    
-                    
-                    <img src="./images/projects/temp.webp" alt="" class="picproj">
-                    
-                    
-                </div>
-                
-                <div id="page-bar">
-                    <img src="./images/icons/left-arrow.svg" alt="">
-                    <p>1</p>
-                    <img src="./images/icons/right-arrow.svg" alt="" >
-                </div>
-            </div>
-        </section>
-        
-            <section id="parralax-bottom" class="parralax">
-                <div id="text-box">
-                    <p>Jeg er fascinert av alle typer koding, og har også ganske nerdete hobbyer som Dungeons & Dragons, gaming og bygging av PC. Siden jeg var liten har jeg alltid syntes det var spennende å bruke tid med data. Jeg har satt meg inn i hvordan PCer virker, og hva som faktisk foregår under panseret. Jeg begynte tidlig å lese meg opp på alt som fantes av gratis ressurser, og det å begynne å lage egne spill var noe jeg tidlig testet ut da jeg begynte med gaming. Følelsen av å ha et fungerende script i et spill, eller for den saks skyld å lage en fungerende nettside er noe som trigger meg veldig.</p>
-                </div>
-            </section>
+    </section>
 
-            <section id="last-sect">
-                <div id="card-bot-links" class="row">
-                    <div id="links-cont" class="column">
-                        <div>
-                            <img src="./images/icons/email.svg" alt="">
-                            <p>JobbJohansen@gmail.com</p>
-                        </div>
-                        <div>
-                            <img src="./images/icons/linked_in.svg" alt="">
-                            <p><a href="">Leah Yoimiya Johansen</a></p>
-                        </div>
-                        <div>
-                            <img src="./images/icons/phone.svg" alt="">
-                            <p>+47 915 27 159+</p>
-                        </div>
-                    </div>
+    <section class="section-size" id="projects-sect">
 
-                    <hr>
-                    
-                    <div>
-                        <img src="./images/projects/temp.webp" alt="" id="bottom-img">
-                    </div>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <footer>
-        <p>Laget av Leah</p>
-        <img src="./images/icons/github.svg" alt="icon of githubs mascot with a dark outline" id="github-logo">
-    </footer>
+    </section>
+   </main>
 </body>
 </html>
