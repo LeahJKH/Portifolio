@@ -1,12 +1,12 @@
 :root {
     --text-color: #EDEEF1;
     --sub-text-color: #AEB3C2;
-    --main-blue: #1A202C;
-    --accent-blue: #2D3748;
-    --main-grey: #4A5568;
-    --accent-grey: #718096;
-    --primary-accent: #3B82F6;
-    --highlight: #F59E0B;
+    --Main-Color: #1A202C;
+    --Main-Accent: #2D3748;
+    --Sub-Color: #4A5568;
+    --Sub-Accent: #718096;
+    --Blue-Highlight: #3B82F6;
+    --Orange-Highlight: #F59E0B;
 }
 
 
@@ -27,15 +27,15 @@ body {
     box-sizing: border-box;
     color: var(--text-color);
     font-family: Manrope, Arial, Helvetica, sans-serif;
-    background-color: var(--main-blue);
-    background: radial-gradient(circle, var(--main-blue) 0%, var(--accent-blue) 100%);
+    background-color: var(--Main-Color);
+    background: radial-gradient(circle, var(--Main-Color) 0%, var(--Main-Accent) 100%);
 }
 
 /* HEADER */
 header {
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main-grey);
+    background-color: var(--Sub-Color);
     position: fixed;
     width: 100vw;
     font-family: Roboto_Flex, Arial, Helvetica, sans-serif;
@@ -56,11 +56,11 @@ nav {
 }
 
 .top-links:hover {
-    color: var(--primary-accent);
+    color: var(--Blue-Highlight);
 }
 
 .top-links:active {
-    color: var(--highlight);
+    color: var(--Orange-Highlight);
 }
 /* HEADER */
 
@@ -84,7 +84,7 @@ nav {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border: 4px solid var(--primary-accent);
+    border: 4px solid var(--Blue-Highlight);
 }
 /*HERO SECTION*/
 
