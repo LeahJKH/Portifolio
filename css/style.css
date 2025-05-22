@@ -12,23 +12,22 @@
 
 
 @font-face {
-    font-family: "Manrope";
-    src: url(../fonts/Manrope/Manrope-VariableFont_wght.ttf);
+    font-family: "Satoshi";
+    src: url(../fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf);
+    font-weight: 300 900;
 }
 
-@font-face {
-    font-family: "Roboto_Flex";
-    src: url(../fonts/Roboto_Flex/RobotoFlex-VariableFont_GRAD,XOPQ,XTRA,YOPQ,YTAS,YTDE,YTFI,YTLC,YTUC,opsz,slnt,wdth,wght.ttf);
-}
+
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--text-color);
-    font-family: Manrope, Arial, Helvetica, sans-serif;
+    font-family: Satoshi, Arial, Helvetica, sans-serif;
     background-color: var(--Main-Color);
     background: radial-gradient(circle, var(--Main-Color) 0%, var(--Main-Accent) 100%);
+    font-size: 500;
 }
 
 /* HEADER */
@@ -38,7 +37,6 @@ header {
     background-color: var(--Sub-Color);
     position: fixed;
     width: 100vw;
-    font-family: Roboto_Flex, Arial, Helvetica, sans-serif;
 }
 
 nav {
@@ -48,6 +46,7 @@ nav {
 
 #top-txt {
     margin: 7px 15px;
+    font-weight: 300;
 }
 
 .top-links {
