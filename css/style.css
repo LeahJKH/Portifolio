@@ -87,6 +87,19 @@ nav {
 }
 /*HERO SECTION*/
 
+/* SKILLS SECTION */
+#skills-sect {
+    background: repeating-linear-gradient(var(--Blue-Highlight) 0%,var(--Blue-Highlight) 50%,#00000000 50%,#00000000 100%);
+    justify-content: space-between;
+}
+#skill-card {
+    width: 80%;
+    height: 70%;
+    background-color: var(--Sub-Color);
+    align-self: center;
+    justify-self: flex-end;
+}
+/* SKILLS SECTION */
 /* COMMON CLASSES */
 .row {
     display: flex;
