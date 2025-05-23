@@ -14,7 +14,6 @@
 @font-face {
     font-family: "Satoshi";
     src: url(../fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf);
-    font-weight: 300 900;
 }
 
 
@@ -27,7 +26,13 @@ body {
     font-family: Satoshi, Arial, Helvetica, sans-serif;
     background-color: var(--Main-Color);
     background: radial-gradient(circle, var(--Main-Color) 0%, var(--Main-Accent) 100%);
-    font-size: 500;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 400;
+}
+p {
+    font-weight: 600;
 }
 
 /* HEADER */
@@ -46,7 +51,6 @@ nav {
 
 #top-txt {
     margin: 7px 15px;
-    font-weight: 300;
 }
 
 .top-links {
@@ -98,8 +102,16 @@ nav {
     background-color: var(--Sub-Color);
     align-self: center;
     justify-self: flex-end;
+    justify-content: space-evenly;
+}
+.card-sects {
+border-right: 2px solid var(--Sub-Accent)  ;
+}
+.card-sects:last-child {
+    border-right: none;
 }
 /* SKILLS SECTION */
+
 /* COMMON CLASSES */
 .row {
     display: flex;
@@ -113,5 +125,8 @@ nav {
 
 .section-size {
     height: 100vh;
+}
+.highlighted-text {
+    color: var(--Blue-Highlight);
 }
 /* COMMON CLASSES */
