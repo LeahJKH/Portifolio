@@ -103,14 +103,26 @@ nav {
     align-self: center;
     justify-self: flex-end;
     justify-content: space-evenly;
+    padding: 5px 7px;
 }
 .card-sects {
-border-right: 2px solid var(--Sub-Accent)  ;
+border-right: 2px solid var(--Sub-Accent);
+text-align: center;
 }
 .card-sects:last-child {
     border-right: none;
 }
+.listed-items {
+    line-height: 4px;
+}
 /* SKILLS SECTION */
+
+/* TREE SECTION */
+.down-line {
+transform: rotate(90deg);
+width: 80px;
+}
+/* TREE SECTION */
 
 /* COMMON CLASSES */
 .row {
