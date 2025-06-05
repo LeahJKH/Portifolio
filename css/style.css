@@ -17,11 +17,12 @@
 }
 
 
-
-body {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body {
     color: var(--text-color);
     font-family: Satoshi, Arial, Helvetica, sans-serif;
     background-color: var(--Main-Color);
@@ -113,53 +114,103 @@ text-align: center;
     border-right: none;
 }
 .listed-items {
-    line-height: 4px;
+    line-height: 2vmax;
+}
+.skill-styling {
+    text-shadow: -1px 0px 20px var(--Main-Color);
+    text-decoration: underline;
+    font-weight: 700;
 }
 /* SKILLS SECTION */
 
 /* TREE SECTION */
-.top-tree-placement,
-.bottom-tree-placement {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto 20px 60px; /* content, horizontal, vertical */
-  position: relative;
-  margin-bottom: 60px;
-}
+  .timeline-container {
+      overflow-x: auto;
+      padding-bottom: 2rem;
+    }
 
-.top-tree-placement > div,
-.bottom-tree-placement > div {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  text-align: center;
-  z-index: 2;
-  padding: 0.5rem;
-}
+    .timeline-container::-webkit-scrollbar {
+      height: 8px;
+    }
 
-.text-line {
-  grid-column: 2 / span 3;
-  grid-row: 2;
-  justify-self: center;
-  align-self: center;
-  width: 100px;
-  height: 2px;
-  background-color: black;
-  z-index: 1;
-}
+    .timeline-container::-webkit-scrollbar-track {
+      background: var(--Main-Accent);
+      border-radius: 4px;
+    }
 
-.down-line {
-  grid-column: 3;
-  grid-row: 2 / span 2;
-  justify-self: center;
-  align-self: start;
-  width: 2px;
-  height: 60px;
-  background-color: black;
-  border: none;
-  margin: 0;
+    .timeline-container::-webkit-scrollbar-thumb {
+      background: var(--Blue-Highlight);
+      border-radius: 4px;
+    }
+
+    .timeline-container::-webkit-scrollbar-thumb:hover {
+      background: var(--Orange-Highlight);
+    }
+
+   .timeline {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
   padding: 0;
+  margin: 0;
+  border-top: 2px solid transparent;
+  position: relative;
+  justify-content: space-between;
+  padding-left: 4%;
+  gap: 2%;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  width: 140%;
+  background: var(--Sub-Color);
   z-index: 0;
 }
+
+
+    .timeline-item {
+      position: relative;
+      min-width: 220px;
+      padding-top: 2rem;
+      flex-shrink: 0;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      top: -9px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 16px;
+      height: 16px;
+      background-color: var(--Blue-Highlight);
+      border-radius: 50%;
+      border: 2px solid var(--Main-Color);
+      z-index: 1;
+    }
+
+    .place {
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+
+    .date {
+      font-size: 0.9rem;
+      color: var(--Orange-Highlight);
+      margin-bottom: 0.25rem;
+    }
+
+    .about {
+      font-size: 0.85rem;
+      color: var(--sub-text-color);
+      line-height: 1.4;
+    }
 
 /* TREE SECTION */
 
