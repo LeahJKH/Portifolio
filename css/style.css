@@ -214,12 +214,61 @@ text-align: center;
 
 /* TREE SECTION */
 
+/* PROJECT SECTION */
+.projcard {
+background-color: var(--Sub-Color);
+width: 25%;
+padding: 7px 10px;
+border-radius: 14px;
+align-items: center;
+gap: 5px;
+height: 80%;
+}
+.projImg {
+width: 90%;
+}
+.projHeading {
+font-size: 30px;
+font-weight: 500;
+}
+.outline-proj {
+width: 86%;
+height: 40px;
+background-color: var(--Blue-Highlight);
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+transition: background-color 0.8s ease;
+}
+.outline-proj:hover {
+background-color: var(--Orange-Highlight);
+cursor: pointer;
+}
+.btnproj {
+width: 99%;
+height: 36px;
+font-size: 1.5vmax;
+background-color: var(--Sub-Accent);
+border-radius: 5px;
+color: var(--text-color);
+border: none;
+cursor: pointer;
+}
+.btnproj:active {
+background-color: var(--Orange-Highlight);
+}
+#projects-sect {
+    justify-content: space-around;
+    align-items: center;
+}
+/* PROJECT SECTION */
+
 /* COMMON CLASSES */
 .row {
     display: flex;
     flex-direction: row;
 }
-
 .column {
     display: flex;
     flex-direction: column;
