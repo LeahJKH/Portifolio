@@ -27,6 +27,7 @@ body {
     font-family: Satoshi, Arial, Helvetica, sans-serif;
     background-color: var(--Main-Color);
     background: radial-gradient(circle, var(--Main-Color) 0%, var(--Main-Accent) 100%);
+    text-align: center;
 }
 
 h1, h2, h3, h4 {
