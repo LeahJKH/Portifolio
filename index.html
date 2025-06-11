@@ -1,163 +1,194 @@
 <!DOCTYPE html>
 <html lang="nb">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/app.js" defer></script>
-</head>
-<body>
-   <header class="row">
-    <h1 id="top-txt">Leah Yoimiya's portfolio</h1>
-    <nav class="row">
+  </head>
+  <body>
+    <header class="row">
+      <h1 id="top-txt">Leah Yoimiya's portfolio</h1>
+      <nav class="row">
         <p><a href="#hero-sect" class="top-links">Hjem</a></p>
         <p><a href="#skills-sect" class="top-links">Ferdigheter</a></p>
         <p><a href="#projects-sect" class="top-links">Prosjekter</a></p>
         <p><a href="#tree-sect" class="top-links">Historie tre</a></p>
-    </nav>
-   </header>
-   <main>
-    <section class="section-size column" id="hero-sect">
+      </nav>
+    </header>
+    <main>
+      <section class="section-size column" id="hero-sect">
         <div>
-            <h2 id="titles">Fullstacker, Mentor & Veileder</h2>
-            <p id="txt-under-title">logikk i kode er min sterke side, jeg elsker kode generelt</p>
+          <h2 id="titles">Fullstacker, Mentor & Veileder</h2>
+          <p id="txt-under-title">
+            logikk i kode er min sterke side, jeg elsker kode generelt
+          </p>
         </div>
-        <img src="./images/me/image.jpg" alt="a picture of me smiling towards the camera with pink hair" id="pic-self">
+        <img
+          src="./images/me/image.jpg"
+          alt="a picture of me smiling towards the camera with pink hair"
+          id="pic-self" />
         <!--TODO: change image, and blue background when new image-->
-    </section>
+      </section>
 
-    <section class="section-size column" id="skills-sect">
-        <div>
-            <p>Jeg liker egentlig ikke å kode for kodens skyld – det er å bygge noe som er både nyttig og utfordrende som virkelig motiverer meg. Det er nettopp kompleksiteten og problemløsningen i koding som gjør det spennende. Jeg er generelt ganske nerdete, med hobbyer som gaming, D&D og PC-bygging. Selv om jeg vokste opp på landet, er det det digitale som virkelig fascinerer meg.</p>
+      <section class="section-size column" id="skills-sect">
+        <div id="text-cont-int">
+          <p>
+            Jeg liker egentlig ikke å kode for kodens skyld. det er å bygge noe
+            som er både nyttig og utfordrende som virkelig motiverer meg. Det er
+            nettopp kompleksiteten og problemløsningen i koding som gjør det
+            spennende. Jeg er generelt ganske nerdete, med hobbyer som gaming,
+            D&D og PC-bygging. Selv om jeg vokste opp på landet, er det det
+            digitale som virkelig fascinerer meg.
+          </p>
         </div>
         <div id="skill-card" class="row">
-            <div class="card-sects">
-                <div>
-                    <h3>Fullstack</h3>
-                    <p>Jeg syntest kode burde holdes simpelt så både klienten og kollegaer er på samme bølgelengde</p>
-                </div>
-                <div>
-                    <div>
-                        <h4 class="highlighted-text skill-styling">Hva jeg liker og bygge</h4>
-                        <p>verktøy, butikk sider, informasjons sider, store prosjekter</p>
-                    </div>
-                    <div>
-                        <h4 class="highlighted-text skill-styling">språk jeg kan</h4>
-                        <div class="listed-items">
-                            <p>HTML</p>
-                            <p>CSS</p>
-                            <p>JavaScript</p>
-                            <p>TypeScript</p>
-                            <p>C-Sharp</p>
-                            <p>Python</p>
-                            <p>kotlin</p>
-                        </div>
-                    </div>
-                </div>
+          <div class="card-sects">
+            <div>
+              <h3>Fullstack</h3>
+              <p>
+                Jeg syntest kode burde holdes simpelt så både klienten og
+                kollegaer er på samme bølgelengde
+              </p>
             </div>
-            <div class="card-sects">
-                <div>
-                    <h3>mentoring</h3>
-                    <p>en god mentor lærer ikke bare og kode men og tenke ut av boksen</p>
+            <div>
+              <div>
+                <h4 class="highlighted-text skill-styling">
+                  Hva jeg liker og bygge
+                </h4>
+                <p>
+                  verktøy, butikk sider, informasjons sider, store prosjekter
+                </p>
+              </div>
+              <div>
+                <h4 class="highlighted-text skill-styling">språk jeg kan</h4>
+                <div class="listed-items">
+                  <p>HTML</p>
+                  <p>CSS</p>
+                  <p>JavaScript</p>
+                  <p>TypeScript</p>
+                  <p>C-Sharp</p>
+                  <p>Python</p>
+                  <p>kotlin</p>
                 </div>
-                <div>
-                    <h4 class="highlighted-text skill-styling"></h4>
-                </div>
+              </div>
             </div>
-            <div class="card-sects">
-                <div>
-                    <h3>verktøy og frameworks</h3>
-                    <p>å bruke verktøy som allerede er laget kan vi jobbe raskere og lage bedre verktøy i framtiden.</p>
-                </div>
-                <div>
-                    <h4 class="highlighted-text skill-styling">Hva jeg kan bruke</h4>
-                    <div class="listed-items">
-                        <p>vscode</p>
-                        <p>vs comunity</p>
-                        <p>React</p>
-                        <p>React native</p>
-                        <p>Next.Js</p>
-                        <p>Blazor</p>
-                        <p>Git</p>
-                        <p>github</p>
-                        <p>Node.js</p>
-                        <p>Docker</p>
-                    </div>
-                </div>
+          </div>
+          <div class="card-sects">
+            <div>
+              <h3>Mentoring</h3>
+              <p>
+                En god mentor lærer ikke bare bort koding, men inspirerer også
+                til å tenke kritisk, kreativt og selvstendig. Målet er å dyrke
+                nysgjerrighet og bygge selvtillit slik at elevene kan stå trygt
+                på egne bein, uansett teknologi.
+              </p>
             </div>
+            <div>
+              <h4 class="highlighted-text skill-styling">
+                Hva jeg fokuserer på
+              </h4>
+              <div class="listed-items">
+                <p>Bygge forståelse, ikke bare ferdigheter</p>
+                <p>Oppmuntre til problemløsning og selvstendighet</p>
+                <p>Skape trygghet i læringsmiljøet</p>
+                <p>Tilpasse veiledning etter nivå og behov</p>
+                <p>Formidle beste praksis og arbeidsmetodikk</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-sects">
+            <div>
+              <h3>verktøy og frameworks</h3>
+              <p>
+                å bruke verktøy som allerede er laget kan vi jobbe raskere og
+                lage bedre verktøy i framtiden.
+              </p>
+            </div>
+            <div>
+              <h4 class="highlighted-text skill-styling">Hva jeg kan bruke</h4>
+              <div class="listed-items">
+                <p>vscode</p>
+                <p>vs comunity</p>
+                <p>React</p>
+                <p>React native</p>
+                <p>Next.Js</p>
+                <p>Blazor</p>
+                <p>Git</p>
+                <p>github</p>
+                <p>Node.js</p>
+                <p>Docker</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <section class="section-size row" id="projects-sect">
-        <div class="projcard column">
-            <img src="./images/projects/temp.webp" alt="" class="projImg">
-            <h2 class="projHeading highlighted-text">temp</h2>
-            <p>temp</p>
-            <div class="outline-proj">
-                <button class="btnproj">To project</button>
-            </div>
-        </div>
-        <div class="projcard column">
-            <img src="./images/projects/temp.webp" alt="" class="projImg">
-            <h2 class="projHeading highlighted-text">temp</h2>
-            <p>temp</p>
-            <div class="outline-proj">
-                <button class="btnproj">To project</button>
-            </div>
-        </div>
-        <div class="projcard column">
-            <img src="./images/projects/temp.webp" alt="" class="projImg">
-            <h2 class="projHeading highlighted-text">temp</h2>
-            <p>temp</p>
-            <div class="outline-proj">
-                <button class="btnproj">To Project</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="tree-sect">
-        <div class="timeline-container">
-                <ul class="timeline">
-                <li class="timeline-item">
-                    <div class="place">Telavåg Barneskule</div>
-                    <div class="date">2009 - 2016</div>
-                    <div class="about">Grunnskole</div>
-                </li>
-                <li class="timeline-item">
-                    <div class="place">Sund Ungdomskole</div>
-                    <div class="date">2016 - 2019</div>
-                    <div class="about">Grunnskole</div>
-                </li>
-                <li class="timeline-item">
-                    <div class="place">Sund VGS avd.sund helse og oppvekst</div>
-                    <div class="date">2019 - 2020</div>
-                    <div class="about">Elev</div>
-                </li>
-                <li class="timeline-item">
-                    <div class="place">Sund VGS avd.sund Barn og ungdom</div>
-                    <div class="date">2020 - 2021</div>
-                    <div class="about">Elev</div>
-                </li>
-                <li class="timeline-item">
-                    <div class="place">Kodehode</div>
-                    <div class="date">2023 august - 2024 july</div>
-                    <div class="about">Deltaker. i 2024 var jeg praktikant i jobloop hos kodehode</div>
-                </li>
-                <li class="timeline-item">
-                    <div class="place">jobloop</div>
-                    <div class="date">2024 august - Present</div>
-                    <div class="about">Lærling og veileder/mentor i kodehode</div>
-                </li>
-                <li class="timeline-item">
-                    <div class="place">Nordev</div>
-                    <div class="date">2024 oktober - Present</div>
-                    <div class="about">Fullstack og mentor</div>
-                </li>
-                </ul>
-            </div>
-        </section>
       </section>
-   </main>
-</body>
+
+      <section class="section-size row" id="projects-sect">
+        <div class="projcard column">
+          <img src="./images/projects/temp.webp" alt="" class="projImg" />
+          <h2 class="projHeading highlighted-text">temp</h2>
+          <p>temp</p>
+          <button class="btnproj">To project</button>
+        </div>
+        <div class="projcard column">
+          <img src="./images/projects/temp.webp" alt="" class="projImg" />
+          <h2 class="projHeading highlighted-text">temp</h2>
+          <p>temp</p>
+          <button class="btnproj">To project</button>
+        </div>
+        <div class="projcard column">
+          <img src="./images/projects/temp.webp" alt="" class="projImg" />
+          <h2 class="projHeading highlighted-text">temp</h2>
+          <p>temp</p>
+          <button class="btnproj">To Project</button>
+        </div>
+      </section>
+
+      <section id="tree-sect">
+        <div class="timeline-container">
+          <ul class="timeline">
+            <li class="timeline-item">
+              <div class="place">Telavåg Barneskule</div>
+              <div class="date">2009 - 2016</div>
+              <div class="about">Grunnskole</div>
+            </li>
+            <li class="timeline-item">
+              <div class="place">Sund Ungdomskole</div>
+              <div class="date">2016 - 2019</div>
+              <div class="about">Grunnskole</div>
+            </li>
+            <li class="timeline-item">
+              <div class="place">Sund VGS avd.sund helse og oppvekst</div>
+              <div class="date">2019 - 2020</div>
+              <div class="about">Elev</div>
+            </li>
+            <li class="timeline-item">
+              <div class="place">Sund VGS avd.sund Barn og ungdom</div>
+              <div class="date">2020 - 2021</div>
+              <div class="about">Elev</div>
+            </li>
+            <li class="timeline-item">
+              <div class="place">Kodehode</div>
+              <div class="date">2023 august - 2024 july</div>
+              <div class="about">
+                Deltaker. i 2024 var jeg praktikant i jobloop hos kodehode
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="place">jobloop</div>
+              <div class="date">2024 august - Present</div>
+              <div class="about">Lærling og veileder/mentor i kodehode</div>
+            </li>
+            <li class="timeline-item">
+              <div class="place">Nordev</div>
+              <div class="date">2024 oktober - Present</div>
+              <div class="about">Fullstack og mentor</div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
