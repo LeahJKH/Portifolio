@@ -113,7 +113,7 @@ nav {
   background-color: var(--Sub-Color);
   align-self: center;
   justify-self: flex-end;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 5px 7px;
 }
 #text-cont-int {
@@ -125,6 +125,8 @@ nav {
 .card-sects {
   border-right: 2px solid var(--Sub-Accent);
   text-align: center;
+  padding: 10px 5px;
+  flex: 1;
 }
 .card-sects:last-child {
   border-right: none;
@@ -232,15 +234,17 @@ nav {
 /* PROJECT SECTION */
 .projcard {
   background-color: var(--Sub-Color);
+  box-shadow: 0px 0px 10px black;
   width: 25%;
   padding: 7px 10px;
   border-radius: 14px;
   align-items: center;
   gap: 5px;
   height: 80%;
+  overflow: hidden;
 }
 .projImg {
-  width: 90%;
+  width: 100%;
 }
 .projHeading {
   font-size: 30px;
@@ -256,7 +260,11 @@ nav {
   color: var(--text-color);
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: 0.3s ease;
+}
+.btnproj:hover {
+  background-color: #3372d7;
+  color: #c4c5c9;
 }
 .btnproj:active {
   background-color: var(--Orange-Highlight);
@@ -279,6 +287,12 @@ nav {
 
 .section-size {
   height: 100vh;
+}
+.section-size:last-of-type {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
 .highlighted-text {
   color: var(--Blue-Highlight);
