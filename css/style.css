@@ -119,7 +119,8 @@ nav {
 #text-cont-int {
   margin: 5% 20%;
   font-weight: 800;
-  color: var(--Main-Color);
+  color: var(--Main-Accent);
+  text-shadow: -1px 0 1px var(--Sub-Color);
   font-size: 20px;
 }
 .card-sects {
