@@ -33,6 +33,8 @@ projects.forEach((e) => {
   img.src = e.img;
   img.alt = e.alt;
 
+  const divider = document.createElement("div");
+  divider.classList.add("info-cont-div");
   const mainHead = document.createElement("h2");
   mainHead.classList.add("projHeading", "highlighted-text");
   let textHead = document.createTextNode(e.header);
@@ -48,9 +50,9 @@ projects.forEach((e) => {
   btn.append(btnTxt);
 
   mainDiv.appendChild(img);
-  mainDiv.appendChild(mainHead);
-  mainDiv.appendChild(p);
-  mainDiv.appendChild(btn);
-
+  divider.appendChild(mainHead);
+  divider.appendChild(p);
+  divider.appendChild(btn);
+  mainDiv.appendChild(divider);
   cont.appendChild(mainDiv);
 });
