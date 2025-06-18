@@ -9,11 +9,11 @@ const projects = [
     link: "",
   },
   {
-    img: "./images/projects/JobScraper.webp",
+    img: "./images/projects/telavaag.webp",
     alt: "",
-    header: "JobScraper",
-    desc: "Denne var laget for og søke etter jobber med minnimalt arbeid for markeds teamet",
-    link: "",
+    header: "My hometown",
+    desc: "Denne var laget for og vise fram bilder jeg hadde tatt av min hjemby",
+    link: "https://github.com/LeahJKH/my-hometown",
   },
   {
     img: "./images/projects/JobScraper.webp",
