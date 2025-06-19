@@ -30,6 +30,24 @@ body {
   );
   text-align: center;
 }
+body::-webkit-scrollbar {
+  height: 8px;
+  width: 9px;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--Main-Accent);
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--Blue-Highlight);
+  border-radius: 4px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--Orange-Highlight);
+}
 
 h1,
 h2,
