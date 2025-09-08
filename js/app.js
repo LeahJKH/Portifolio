@@ -1,16 +1,53 @@
+const starGrid = document.getElementById("star-grid");
+
+const icons = [
+  "./images/icons/cPlusPlus.svg",
+  "./images/icons/CSharp.svg",
+  "./images/icons/htmlCssJs.svg",
+  "./images/icons/Python.svg",
+  "./images/icons/React.svg",
+  "./images/icons/TS.svg",
+];
+
+function spawnStar() {
+  const star = document.createElement("img");
+  star.src = icons[Math.floor(Math.random() * icons.length)];
+  star.classList.add("star");
+
+  const section = document.getElementById("moon-scape");
+  const sectionRect = section.getBoundingClientRect();
+
+  const x = Math.random() * sectionRect.width - 40;
+  const y = Math.random() * sectionRect.height - 40;
+
+  star.style.left = `${x}px`;
+  star.style.top = `${y}px`;
+
+  starGrid.appendChild(star);
+
+  setTimeout(() => {
+    star.remove();
+  }, 2000);
+}
+
+// Spawn a star every ~800ms
+setInterval(spawnStar, 800);
+setInterval(spawnStar, 800);
+setInterval(spawnStar, 800);
+
 const cont = document.querySelector("#projects-sect");
 
 const projects = [
   {
     img: "./images/projects/JobScraper.webp",
-    alt: "",
+    alt: "A screenshot of the code in python",
     header: "JobScraper",
     desc: "Denne var laget for og søke etter jobber med minnimalt arbeid for markeds teamet",
     link: "",
   },
   {
     img: "./images/projects/telavaag.webp",
-    alt: "",
+    alt: "a picture of the frontpage for a site about telavåg",
     header: "My hometown",
     desc: "Denne var laget for og vise fram bilder jeg hadde tatt av min hjemby",
     link: "https://github.com/LeahJKH/my-hometown",
