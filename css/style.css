@@ -109,6 +109,7 @@ header {
   bottom: -300px;
   width: 100%;
   z-index: 2;
+  -webkit-user-drag: none;
 }
 /* MOON SECTION */
 
