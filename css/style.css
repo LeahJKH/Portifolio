@@ -1,3 +1,11 @@
+:root {
+  --light-grey: rgb(181, 181, 181);
+  --bg-color: rgb(34, 35, 35);
+  --accent-bg: rgb(22, 22, 23);
+  --shadow-black: rgb(13, 13, 13);
+  --muted-gold: rgb(212, 175, 55);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +15,10 @@
   font-family: "Satoshi";
   src: url(../fonts/Satoshi_Complete/Fonts/TTF/Satoshi-Variable.ttf);
 }
+
+/* TAGS */
 body {
-  background-color: rgb(34, 35, 35);
+  background-color: var(--bg-color);
   overflow-x: hidden;
   font-family: Satoshi, Arial, Helvetica, sans-serif;
 }
@@ -25,14 +35,17 @@ header {
   width: 100%;
   height: 75px;
   position: fixed;
-  background-color: #161617;
+  background-color: var(--accent-bg);
   z-index: 15;
   border-radius: 0 0 50px 50px;
   padding: 5px 50px;
-  color: #b5b5b5;
+  color: var(--light-grey);
   justify-content: space-between;
   align-items: center;
 }
+/* TAGS */
+
+/* HEADER */
 #btn-spacing {
   gap: 15px;
   justify-content: space-between;
@@ -41,16 +54,17 @@ header {
 .btn {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #b5b5b5;
+  border-bottom: 1px solid var(--light-grey);
   font-size: 19px;
 }
 .btn:hover {
-  border-bottom: 2px solid #d4af37;
+  border-bottom: 2px solid var(--muted-gold);
 }
 .btn > a {
   text-decoration: none;
-  color: #b5b5b5;
+  color: var(--light-grey);
 }
+/* HEADER */
 
 /* MOON SECTION */
 #moon-scape {
@@ -79,7 +93,6 @@ header {
   height: 100vh;
   position: relative;
   overflow: hidden;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -140,15 +153,14 @@ header {
 
 .listed-items {
   line-height: 2vmax;
-  color: #b5b5b5;
+  color: var(--light-grey);
 }
 
 .skill-styling {
   text-decoration: underline;
   font-weight: 700;
-  color: #d4af37;
+  color: var(--muted-gold);
 }
-
 /* SKILLS SECTION */
 
 /* TREE SECTION */
@@ -158,7 +170,6 @@ header {
 }
 
 .timeline {
-  display: flex;
   list-style: none;
   margin: 0;
   padding-left: 4%;
@@ -195,7 +206,7 @@ header {
   transform: translateX(-50%);
   width: 16px;
   height: 16px;
-  background-color: #d4af37;
+  background-color: var(--muted-gold);
   border-radius: 50%;
   border: 2px solid #e0e0e0;
   z-index: 1;
@@ -209,20 +220,21 @@ header {
 
 .date {
   font-size: 0.9rem;
-  color: #d4af37;
+  color: var(--muted-gold);
   margin-bottom: 0.25rem;
 }
 
 .about {
   font-size: 0.85rem;
-  color: #b5b5b5;
+  color: var(--light-grey);
   line-height: 1.4;
 }
+/* TREE SECTION */
 
 /* PROJECT SECTION */
 .projcard {
   background-color: #1f1f1f;
-  box-shadow: 0px 0px 12px #0d0d0d;
+  box-shadow: 0px 0px 12px var(--shadow-black);
   width: 25%;
   padding: 7px 10px;
   border-radius: 14px;
@@ -234,13 +246,6 @@ header {
   aspect-ratio: 1/1.2;
   border: 1px solid #2c2c2c;
   color: #e0e0e0;
-}
-
-.info-cont-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 15px;
 }
 
 .projImg {
@@ -266,11 +271,11 @@ header {
 
 .btnproj:hover {
   background-color: #3a3a3a;
-  color: #d4af37;
+  color: var(--muted-gold);
 }
 
 .btnproj:active {
-  background-color: #d4af37;
+  background-color: var(--muted-gold);
   color: #121212;
 }
 
@@ -278,19 +283,16 @@ header {
   justify-content: space-around;
   align-items: center;
 }
-
 /* PROJECT SECTION */
 
 /* FOOTER */
-
 footer {
   width: 100%;
   height: 75px;
-  background-color: #161617;
+  background-color: var(--accent-bg);
   border-radius: 50px 50px 0 0;
   padding: 5px 50px;
-  color: #b5b5b5;
-  display: flex;
+  color: var(--light-grey);
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -300,13 +302,11 @@ footer {
 
 #footer-content {
   width: 100%;
-  display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 #footer-icons {
-  display: flex;
   gap: 20px;
 }
 
@@ -343,6 +343,7 @@ footer {
 }
 /* ANIMATIONS */
 
+/* COMMON CLASSES */
 .row {
   display: flex;
   flex-direction: row;
@@ -351,6 +352,7 @@ footer {
   display: flex;
   flex-direction: column;
 }
+/* COMMON CLASSES */
 
 /* GLOBAL SCROLLBAR */
 html::-webkit-scrollbar,
@@ -361,14 +363,14 @@ html::-webkit-scrollbar,
 
 html::-webkit-scrollbar-track,
 .timeline-container::-webkit-scrollbar-track {
-  background: #0d0d0d;
+  background: var(--shadow-black);
 }
 
 html::-webkit-scrollbar-thumb,
 .timeline-container::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #d4af37, #a8892d);
+  background: linear-gradient(180deg, var(--muted-gold), #a8892d);
   border-radius: 6px;
-  border: 2px solid #0d0d0d;
+  border: 2px solid var(--shadow-black);
 }
 
 html::-webkit-scrollbar-thumb:hover,
