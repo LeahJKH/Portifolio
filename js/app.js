@@ -43,7 +43,7 @@ const projects = [
     alt: "A screenshot of the code in python",
     header: "JobScraper",
     desc: "Denne var laget for og søke etter jobber med minnimalt arbeid for markeds teamet",
-    link: "",
+    link: "https://github.com/LeahJKH/pyScraper",
   },
   {
     img: "./images/projects/telavaag.webp",
@@ -53,11 +53,11 @@ const projects = [
     link: "https://github.com/LeahJKH/my-hometown",
   },
   {
-    img: "./images/projects/JobScraper.webp",
-    alt: "",
-    header: "JobScraper",
-    desc: "Denne var laget for og søke etter jobber med minnimalt arbeid for markeds teamet",
-    link: "",
+    img: "./images/projects/Go-Calc.webp",
+    alt: "picture of a dark themed simple calculator",
+    header: "Go-Calc",
+    desc: "Her testet jeg Go Lang og lagde en simpel kalkulator",
+    link: "https://github.com/LeahJKH/Go-calc",
   },
 ];
 

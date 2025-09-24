@@ -1,32 +1,32 @@
 [
-    {
-        "name": "Temp",
-        "img": "./images/projects/temp.webp",
-        "alt": "Temp image"
-    },
-    {
-        "name": "Temp2",
-        "img": "./images/projects/temp.webp",
-        "alt": "Temp image"
-    },
-    {
-        "name": "Temp3",
-        "img": "./images/projects/temp.webp",
-        "alt": "Temp image"
-    },
-    {
-        "name": "Temp4",
-        "img": "./images/projects/temp.webp",
-        "alt": "Temp image"
-    },
-    {
-        "name": "Temp5",
-        "img": "./images/projects/temp.webp",
-        "alt": "Temp image"
-    },
-    {
-        "name": "Temp6",
-        "img": "./images/projects/temp.webp",
-        "alt": "Temp image"
-    }
+  {
+    "name": "Temp",
+    "img": "./images/projects/temp.webp",
+    "alt": "Temp image"
+  },
+  {
+    "name": "Temp2",
+    "img": "./images/projects/temp.webp",
+    "alt": "Temp image"
+  },
+  {
+    "name": "Temp3",
+    "img": "./images/projects/temp.webp",
+    "alt": "Temp image"
+  },
+  {
+    "name": "Temp4",
+    "img": "./images/projects/temp.webp",
+    "alt": "Temp image"
+  },
+  {
+    "name": "Temp5",
+    "img": "./images/projects/temp.webp",
+    "alt": "Temp image"
+  },
+  {
+    "name": "Temp6",
+    "img": "./images/projects/temp.webp",
+    "alt": "Temp image"
+  }
 ]
