@@ -54,15 +54,21 @@ header {
 .btn {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid var(--light-grey);
+  border-bottom: 2px solid var(--light-grey);
   font-size: 19px;
+  padding: 2px 5px;
+  transition: all 1s;
 }
 .btn:hover {
   border-bottom: 2px solid var(--muted-gold);
 }
+.btn > a:active {
+  color: var(--muted-gold);
+}
 .btn > a {
   text-decoration: none;
   color: var(--light-grey);
+  font-weight: 700;
 }
 /* HEADER */
 
@@ -138,6 +144,7 @@ header {
   background-color: #000000;
   color: #e0e0e0;
   font-size: 25px;
+  z-index: 3;
 }
 
 .card-sects {

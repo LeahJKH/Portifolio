@@ -46,7 +46,7 @@ const projects = [
     link: "https://github.com/LeahJKH/pyScraper",
   },
   {
-    img: "./images/projects/telavaag.webp",
+    img: "./images/projects/Hometown.webp",
     alt: "a picture of the frontpage for a site about telavåg",
     header: "My hometown",
     desc: "Denne var laget for og vise fram bilder jeg hadde tatt av min hjemby",
@@ -59,6 +59,13 @@ const projects = [
     desc: "Her testet jeg Go Lang og lagde en simpel kalkulator",
     link: "https://github.com/LeahJKH/Go-calc",
   },
+  {
+    img: "./images/projects/CheatSheet.webp",
+    alt: "a screen dump of the page with some foundational Javascript",
+    header: "Coding Cheatsheet",
+    desc: "this is made for fun just a cheat sheet for coding langs around web dev",
+    link: "https://github.com/LeahJKH/Coding-Cheatsheet"
+  }
 ];
 
 projects.forEach((e) => {
