@@ -100,3 +100,7 @@ projects.forEach((e) => {
   mainDiv.appendChild(divider);
   cont.appendChild(mainDiv);
 });
+
+
+
+

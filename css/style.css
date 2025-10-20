@@ -241,19 +241,21 @@ header {
 
 /* PROJECT SECTION */
 .projcard {
+  
   background-color: #1f1f1f;
   box-shadow: 0px 0px 12px var(--shadow-black);
-  width: 25%;
   padding: 7px 10px;
   border-radius: 14px;
   align-items: center;
   gap: 5px;
   height: fit-content;
   overflow: hidden;
-  justify-content: space-around;
+  justify-content: space-between;
   aspect-ratio: 1/1.2;
   border: 1px solid #2c2c2c;
   color: #e0e0e0;
+    width: 50%;
+  transition: transform 0.5s ease;
 }
 
 .projImg {
@@ -275,6 +277,7 @@ header {
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
+  margin-top: 10px;
 }
 
 .btnproj:hover {
@@ -290,6 +293,9 @@ header {
 #projects-sect {
   justify-content: space-around;
   align-items: center;
+   display: flex;
+  overflow: hidden;
+  width: 100vw;
 }
 /* PROJECT SECTION */
 
