@@ -1,9 +1,10 @@
 :root {
   --light-grey: rgb(181, 181, 181);
-  --bg-color: rgb(34, 35, 35);
+  --bg-color: rgb(19, 22, 30);
   --accent-bg: rgb(22, 22, 23);
-  --shadow-black: rgb(13, 13, 13);
+  --shadow-black: rgb(14, 14, 14);
   --muted-gold: rgb(212, 175, 55);
+  --text-white: rgb(223, 225, 235);
 }
 
 * {
@@ -75,6 +76,12 @@ header {
 /* MOON SECTION */
 #moon-scape {
   width: 100vw;
+  background-image: url("../images/clouds.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-position:bottom;
+  background-size: cover;
+  background-color: var(--bg-color);
 }
 
 #moon {
@@ -110,20 +117,14 @@ header {
   transform: scale(0.5);
   animation: twinkle 2s forwards;
 }
-#clouds {
-  position: absolute;
-  bottom: -300px;
-  width: 100%;
-  z-index: 2;
-  -webkit-user-drag: none;
-}
+
 /* MOON SECTION */
 
 /* SKILLS SECTION */
 #skills-sect {
-  background: #121212;
   justify-content: space-between;
   position: relative;
+  margin-bottom: 20px;
 }
 
 #skill-card {
@@ -142,11 +143,14 @@ header {
   padding: 5% 17%;
   font-weight: 800;
   background-color: #000000;
-  color: #e0e0e0;
-  font-size: 25px;
+  color: var(--text-white);
+  font-size: 1.5vmax;
   z-index: 3;
 }
-
+#name-info-sect {
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--text-white);
+}
 .card-sects {
   color: #e0e0e0;
   border-right: 2px solid #2c2c2c;
@@ -160,14 +164,20 @@ header {
 }
 
 .listed-items {
-  line-height: 2vmax;
+  line-height: 1.5vmax;
   color: var(--light-grey);
+  font-weight: 500;
 }
 
 .skill-styling {
   text-decoration: underline;
   font-weight: 700;
   color: var(--muted-gold);
+}
+.heading-skill {
+  font-size: 2vmax;
+  text-decoration: underline;
+  text-transform: uppercase;
 }
 /* SKILLS SECTION */
 
@@ -223,7 +233,7 @@ header {
 .place {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #e0e0e0;
+  color: var(--text-white);
 }
 
 .date {

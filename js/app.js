@@ -91,7 +91,11 @@ projects.forEach((e) => {
   const btn = document.createElement("button");
   btn.classList.add("btnproj");
   const btnTxt = document.createTextNode("GO");
-  btn.append(btnTxt);
+  const a = document.createElement("a")
+  a.href = e.link
+  a.target = "_blank"
+  a.append(btnTxt)
+  btn.append(a)
 
   mainDiv.appendChild(img);
   divider.appendChild(mainHead);
