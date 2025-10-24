@@ -73,9 +73,7 @@ async function carusell() {
   })
 
   data.forEach((e) => {
-    const input = document.createElement("input")
-    input.type = "radio"
-    input.name = "projShow"
+    const input = document.createElement("div")
     input.classList = "radioBtnsStyle"
     input.id = `radio${e.index}`
 
@@ -97,7 +95,19 @@ carusell()
 function builder(a) {
   let data = a
   const currRadio = document.querySelector(`#radio${data.index}`)
-  currRadio.checked = true
+
+  const switchDivs = document.querySelector("#radio0")
+  const switchDivs1 = document.querySelector("#radio1")
+  const switchDivs2 = document.querySelector("#radio2")
+  const switchDivs3 = document.querySelector("#radio3")
+  switchDivs.innerHTML = ""
+  switchDivs1.innerHTML = ""
+  switchDivs2.innerHTML = ""
+  switchDivs3.innerHTML = ""
+  const checkedDiv = document.createElement("div")
+  checkedDiv.id = "checkedDiv"
+  currRadio.appendChild(checkedDiv)
+
   const projectContShowing = document.querySelector("#project-cont-showing")
   projectContShowing.innerHTML = ""
 
@@ -110,7 +120,7 @@ function builder(a) {
   img.alt = data.alt;
 
   const divider = document.createElement("div");
-  divider.classList.add("info-cont-div");
+  divider.classList.add("info-cont-div", "column");
   const mainHead = document.createElement("h2");
   mainHead.classList.add("projHeading", "highlighted-text");
   let textHead = document.createTextNode(data.header);
