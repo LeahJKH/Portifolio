@@ -1,5 +1,6 @@
 [
   {
+    "index": 0,
     "img": "./images/projects/JobScraper.webp",
     "alt": "A screenshot of the code in python",
     "header": "JobScraper",
@@ -7,6 +8,7 @@
     "link": "https://github.com/LeahJKH/pyScraper"
   },
   {
+    "index": 1,
     "img": "./images/projects/Hometown.webp",
     "alt": "a picture of the frontpage for a site about telavåg",
     "header": "My hometown",
@@ -14,6 +16,7 @@
     "link": "https://github.com/LeahJKH/my-hometown"
   },
   {
+    "index": 2,
     "img": "./images/projects/Go-Calc.webp",
     "alt": "picture of a dark themed simple calculator",
     "header": "Go-Calc",
@@ -21,6 +24,7 @@
     "link": "https://github.com/LeahJKH/Go-calc"
   },
   {
+    "index": 3,
     "img": "./images/projects/CheatSheet.webp",
     "alt": "a screen dump of the page with some foundational Javascript",
     "header": "Coding Cheatsheet",

@@ -79,3 +79,33 @@ async function getData() {
   });
 }
 getData()
+
+async function carusell() {
+  const leftArrow = document.querySelector("#leftArrow")
+  const rightArrow = document.querySelector("#rightArrow")
+  const projectContShowing = document.querySelector("#project-cont-showing")
+  const radioCont = document.querySelector("#radiobtns")
+  let index = 0
+
+  const res = await fetch("https://raw.githubusercontent.com/LeahJKH/Portifolio/refs/heads/main/json/projects/all.json")
+  let data = await res.json()
+
+  leftArrow.addEventListener("click", (e) => {
+    index -= 1
+  })
+  rightArrow.addEventListener("click", (e) => {
+    index += 1
+  })
+
+  data.forEach((e) => {
+    const input = document.createElement("input")
+    input.type = "radio"
+    input.addEventListener("click", (e) => {
+      index = e.index
+    })
+    radioCont.appendChild(input)
+  })
+
+
+}
+carusell()
