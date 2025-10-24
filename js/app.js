@@ -35,77 +35,105 @@ setInterval(spawnStar, 800);
 setInterval(spawnStar, 800);
 setInterval(spawnStar, 800);
 
-const cont = document.querySelector("#projects-sect");
-async function getData() {
-
-  const res = await fetch("https://raw.githubusercontent.com/LeahJKH/Portifolio/refs/heads/main/json/projects/all.json")
-  let data = await res.json()
-
-  data.forEach((e) => {
-    const mainDiv = document.createElement("div");
-    mainDiv.classList.add("projcard", "column");
-
-    const img = document.createElement("img");
-    img.classList.add("projImg");
-    img.src = e.img;
-    img.alt = e.alt;
-
-    const divider = document.createElement("div");
-    divider.classList.add("info-cont-div");
-    const mainHead = document.createElement("h2");
-    mainHead.classList.add("projHeading", "highlighted-text");
-    let textHead = document.createTextNode(e.header);
-    mainHead.append(textHead);
-
-    const p = document.createElement("p");
-    const ptxt = document.createTextNode(e.desc);
-    p.append(ptxt);
-
-    const btn = document.createElement("button");
-    btn.classList.add("btnproj");
-    const btnTxt = document.createTextNode("GO");
-    const a = document.createElement("a")
-    a.href = e.link
-    a.target = "_blank"
-    a.append(btnTxt)
-    btn.append(a)
-
-    mainDiv.appendChild(img);
-    divider.appendChild(mainHead);
-    divider.appendChild(p);
-    divider.appendChild(btn);
-    mainDiv.appendChild(divider);
-    cont.appendChild(mainDiv);
-  });
-}
-getData()
+let index = 0
 
 async function carusell() {
   const leftArrow = document.querySelector("#leftArrow")
   const rightArrow = document.querySelector("#rightArrow")
-  const projectContShowing = document.querySelector("#project-cont-showing")
   const radioCont = document.querySelector("#radiobtns")
-  let index = 0
 
   const res = await fetch("https://raw.githubusercontent.com/LeahJKH/Portifolio/refs/heads/main/json/projects/all.json")
   let data = await res.json()
-
+  setInterval(() => {
+    if (index >= 3) {
+      index = 0
+      builder(data[index])
+    } else {
+      index += 1
+      builder(data[index])
+    }
+  }, 8000)
   leftArrow.addEventListener("click", (e) => {
-    index -= 1
+    if (index <= 0) {
+      index = 3
+      builder(data[index])
+    } else {
+      index -= 1
+      builder(data[index])
+    }
   })
   rightArrow.addEventListener("click", (e) => {
-    index += 1
+    if (index >= 3) {
+      index = 0
+      builder(data[index])
+    } else {
+      index += 1
+      builder(data[index])
+    }
   })
 
   data.forEach((e) => {
     const input = document.createElement("input")
     input.type = "radio"
-    input.addEventListener("click", (e) => {
-      index = e.index
+    input.name = "projShow"
+    input.classList = "radioBtnsStyle"
+    input.id = `radio${e.index}`
+
+    const obj = e
+    input.addEventListener("click", (a) => {
+      index = obj.index
+      console.log(obj)
+      console.log(obj.index)
+      console.log(index)
+      builder(obj)
     })
     radioCont.appendChild(input)
   })
 
-
+  builder(data[index])
 }
 carusell()
+
+function builder(a) {
+  let data = a
+  const currRadio = document.querySelector(`#radio${data.index}`)
+  currRadio.checked = true
+  const projectContShowing = document.querySelector("#project-cont-showing")
+  projectContShowing.innerHTML = ""
+
+  const mainDiv = document.createElement("div");
+  mainDiv.classList.add("projcard", "row");
+
+  const img = document.createElement("img");
+  img.classList.add("projImg");
+  img.src = data.img;
+  img.alt = data.alt;
+
+  const divider = document.createElement("div");
+  divider.classList.add("info-cont-div");
+  const mainHead = document.createElement("h2");
+  mainHead.classList.add("projHeading", "highlighted-text");
+  let textHead = document.createTextNode(data.header);
+  mainHead.append(textHead);
+
+  const p = document.createElement("p");
+  const ptxt = document.createTextNode(data.desc);
+  p.append(ptxt);
+
+  const btn = document.createElement("button");
+  btn.classList.add("btnproj");
+  const btnTxt = document.createTextNode("GO");
+
+  btn.append(btnTxt)
+  btn.addEventListener("click", (e) => {
+    window.open(data.link)
+  })
+
+
+  mainDiv.appendChild(img);
+  divider.appendChild(mainHead);
+  divider.appendChild(p);
+  divider.appendChild(btn);
+  mainDiv.appendChild(divider);
+  projectContShowing.appendChild(mainDiv);
+}

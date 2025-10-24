@@ -251,25 +251,17 @@ header {
 
 /* PROJECT SECTION */
 .projcard {
-  
+  width: 900px;
+  height: 350px;
+  text-align: center;
   background-color: #1f1f1f;
-  box-shadow: 0px 0px 12px var(--shadow-black);
-  padding: 7px 10px;
-  border-radius: 14px;
-  align-items: center;
-  gap: 5px;
-  height: fit-content;
-  overflow: hidden;
-  justify-content: space-between;
-  aspect-ratio: 1/1.2;
-  border: 1px solid #2c2c2c;
-  color: #e0e0e0;
-    width: 50%;
-  transition: transform 0.5s ease;
+  color: var(--text-white);
+  padding: 20px 10px;
 }
 
 .projImg {
-  width: 100%;
+  width: 40%;
+  border: 4px solid #2c2c2c;
 }
 
 .projHeading {
@@ -278,7 +270,7 @@ header {
 }
 
 .btnproj {
-  width: 99%;
+  width: 90%;
   height: 36px;
   font-size: 1.5vmax;
   background-color: #2c2c2c;
@@ -300,13 +292,52 @@ header {
   color: #121212;
 }
 
-#projects-sect {
-  justify-content: space-around;
+
+
+#proj {
+  height: 100%;
+  width: 100%;
   align-items: center;
-   display: flex;
-  overflow: hidden;
-  width: 100vw;
+  justify-content: center;
 }
+#carusell {
+  width: 100%;
+  height: 100%;
+  padding: 2% 4%;
+  justify-content: center;
+  align-items: center;
+}
+
+#leftArrow, #rightArrow {
+width: 100px;
+height: 100px;
+}
+#leftArrow {
+  transform: rotate(180deg);
+}
+.svg-arr {
+  fill: var(--bg-color);
+  stroke-width: 0.3; 
+  stroke: var(--light-grey);
+  transition: 1s ease;
+  cursor: pointer;
+}
+.svg-arr:hover {
+fill: var(--light-grey);
+}
+.radioBtnsStyle {
+  appearance: none;
+  height: 40px;
+  width: 40px;
+  background: #28272a;
+  border-radius: 40px;
+  margin: 5px 5px 0 0;
+}
+.radioBtnsStyle:checked {
+  
+  border: solid 8px var(--muted-gold);
+}
+
 /* PROJECT SECTION */
 
 /* FOOTER */
