@@ -123,17 +123,16 @@ header {
 
 /* SKILLS SECTION */
 #skills-sect {
-  justify-content: space-between;
-  position: relative;
+  justify-content: space-around;
   margin-bottom: 20px;
 }
 
 #skill-card {
   width: 80%;
-  height: 70%;
+  height: fit-content;
   background-color: #1f1f1f;
   align-self: center;
-  justify-self: flex-end;
+
   justify-content: space-between;
   padding: 5px 7px;
   border: 1px solid #2c2c2c;
@@ -157,9 +156,10 @@ header {
   border-right: 2px solid #2c2c2c;
   text-align: center;
   padding: 10px 5px;
-  flex: 1;
 }
-
+.card-sects > div > p {
+  font-size: 1.3vmax;
+}
 .card-sects:last-child {
   border-right: none;
 }
@@ -168,12 +168,17 @@ header {
   line-height: 1.5vmax;
   color: var(--light-grey);
   font-weight: 500;
+  font-size: 1.2vmax;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
 }
 
 .skill-styling {
   text-decoration: underline;
   font-weight: 700;
   color: var(--muted-gold);
+  font-size: 1.5vmax;
 }
 .heading-skill {
   font-size: 2vmax;
@@ -186,6 +191,7 @@ header {
 .timeline-container {
   overflow-x: auto;
   padding-bottom: 2rem;
+  text-align: center;
 }
 
 .timeline {
@@ -319,8 +325,8 @@ font-size: 1vmax;
 }
 
 #leftArrow, #rightArrow {
-width: 100px;
-height: 100px;
+min-width: 100px;
+min-height: 100px;
 }
 #leftArrow {
   transform: rotate(180deg);
@@ -446,4 +452,19 @@ html::-webkit-scrollbar-thumb,
 html::-webkit-scrollbar-thumb:hover,
 .timeline-container::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(180deg, #e0c04f, #b89b36);
+}
+
+@media screen and (max-width: 1200px) {
+#skill-card {
+  flex-direction: column;
+}
+.card-sects {
+  border: none;
+  border-bottom: 2px solid #2c2c2c;
+}
+.card-sects:last-child {
+  border: none;
+
+}
+  
 }
