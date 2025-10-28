@@ -9,9 +9,12 @@ const icons = [
   "./images/icons/TS.svg",
 ];
 
-function spawnStar() {
+async function spawnStar() {
+  const res = await fetch("https://raw.githubusercontent.com/LeahJKH/Portifolio/refs/heads/main/json/langC.json")
+  const data = await res.json()
+
   const star = document.createElement("img");
-  star.src = icons[Math.floor(Math.random() * icons.length)];
+  star.src = data[Math.floor(Math.random() * data.length)].img;
   star.classList.add("star");
 
   const section = document.getElementById("moon-scape");
