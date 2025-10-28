@@ -5,7 +5,7 @@
     "alt": "A screenshot of the code in python",
     "header": "JobScraper",
     "languages": ["Python", "Next.js", "SQL"],
-    "desc": "Denne var laget for og søke etter jobber med minnimalt arbeid for markeds teamet",
+    "desc": "Denne var laget for og søke etter jobber med minnimalt arbeid for markeds teamet. den har bygget frontend inne i han og trenger spesefikt tilgang til sql server til jobloop. ",
     "link": "https://github.com/LeahJKH/pyScraper"
   },
   {
@@ -14,7 +14,7 @@
     "alt": "a picture of the frontpage for a site about telavåg",
     "header": "My hometown",
     "languages": ["HTML", "CSS", "JS"],
-    "desc": "Denne var laget for og vise fram bilder jeg hadde tatt av min hjemby",
+    "desc": "Denne var laget for og vise fram bilder jeg hadde tatt av min hjemby. dette var min første oppgave i kodehode og er laget helt fra bunnen av megselv",
     "link": "https://github.com/LeahJKH/my-hometown"
   },
   {
@@ -23,7 +23,7 @@
     "alt": "picture of a dark themed simple calculator",
     "header": "Go-Calc",
     "languages": ["GoLang"],
-    "desc": "Her testet jeg Go Lang og lagde en simpel kalkulator",
+    "desc": "Her testet jeg Go Lang og lagde en simpel kalkulator. laget i øving på og bruke GoLang med Fyne library",
     "link": "https://github.com/LeahJKH/Go-calc"
   },
   {
@@ -32,7 +32,7 @@
     "alt": "a screen dump of the page with some foundational Javascript",
     "header": "Coding Cheatsheet",
     "languages": ["HTML", "CSS", "JS"],
-    "desc": "this is made for fun just a cheat sheet for coding langs around web dev",
+    "desc": "laget for og ha en litt annen type documentation dersom jeg ikke liker hvordan mye blir beskrivet på vanskligere måter en nødvendig.",
     "link": "https://github.com/LeahJKH/Coding-Cheatsheet"
   }
 ]

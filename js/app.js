@@ -1,13 +1,6 @@
 const starGrid = document.getElementById("star-grid");
 
-const icons = [
-  "./images/icons/cPlusPlus.svg",
-  "./images/icons/CSharp.svg",
-  "./images/icons/htmlCssJs.svg",
-  "./images/icons/Python.svg",
-  "./images/icons/React.svg",
-  "./images/icons/TS.svg",
-];
+
 
 async function spawnStar() {
   const res = await fetch("https://raw.githubusercontent.com/LeahJKH/Portifolio/refs/heads/main/json/langC.json")
@@ -133,6 +126,10 @@ function builder(a) {
   const ptxt = document.createTextNode(data.desc);
   p.append(ptxt);
 
+  const p2 = document.createElement("p");
+  const ptxt2 = document.createTextNode(`språk brukt: ${data.languages.join(", ")}`);
+  p2.append(ptxt2);
+
   const btn = document.createElement("button");
   btn.classList.add("btnproj");
   const btnTxt = document.createTextNode("GO");
@@ -146,6 +143,7 @@ function builder(a) {
   mainDiv.appendChild(img);
   divider.appendChild(mainHead);
   divider.appendChild(p);
+  divider.appendChild(p2);
   divider.appendChild(btn);
   mainDiv.appendChild(divider);
   projectContShowing.appendChild(mainDiv);
