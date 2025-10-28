@@ -30,10 +30,15 @@ body {
 section {
   width: 100vw;
   height: 100vh;
+  color: var(--text-white);
 }
 section:last-of-type {
   width: 100vw;
   height: 50vh;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
 }
 /* TAGS */
 
@@ -120,68 +125,39 @@ header {
 
 /* MOON SECTION */
 
-/* SKILLS SECTION */
-#skills-sect {
-  justify-content: space-around;
-  margin-bottom: 20px;
+/* INTRO SECTION */
+#name-txt {
+  font-size: 3.5vmax;
 }
-
-#skill-card {
-  width: 80%;
+#title-txt {
+  font-size: 2.7vmax;
+  text-decoration: underline;
+}
+#intro-txt {
+  font-size: 1.7vmax;
+}
+/* INTRO SECTION */
+#intro-sect, #skill-sect {
   height: fit-content;
-  background-color: var(--Dark-grey);
-  align-self: center;
-  justify-content: space-between;
-  padding: 5px 7px;
-  border: 1px solid var(--Accent-grey);
-  border-radius: 12px;
+  padding: 25px 10%;
 }
-
-#text-cont-int {
-  padding: 5% 17%;
-  font-weight: 800;
-  background-color: var(--Dark-grey);
-  color: var(--text-white);
-  font-size: 1.5vmax;
-  z-index: 3;
-}
-#name-info-sect {
-  margin-bottom: 20px;
-  border-bottom: 2px solid var(--text-white);
-}
-.card-sects {
-  color: #e0e0e0;
-  border-right: 2px solid var(--Accent-grey);
-  text-align: center;
-  padding: 10px 5px;
-}
-.card-sects > div > p {
-  font-size: 1.3vmax;
-}
-.card-sects:last-child {
-  border-right: none;
-}
-
-.listed-items {
-  line-height: 1.5vmax;
-  color: var(--light-grey);
-  font-weight: 500;
-  font-size: 1.2vmax;
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-
-}
-
-.skill-styling {
+/* SKILLS SECTION */
+#title-coder {
+    font-size: 3.5vmax;
   text-decoration: underline;
-  font-weight: 700;
-  color: var(--muted-gold);
-  font-size: 1.5vmax;
 }
-.heading-skill {
-  font-size: 2vmax;
-  text-decoration: underline;
-  text-transform: uppercase;
+#coder-txt {
+font-size: 1.7vmax;
+}
+.sub-title-coder {
+    font-size: 2.7vmax;
+    text-decoration: underline;
+}
+.list-coder >li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 1.7vmax;
+  margin-right: 6px;
 }
 /* SKILLS SECTION */
 
